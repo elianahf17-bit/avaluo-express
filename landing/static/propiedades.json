@@ -1,0 +1,8 @@
+[
+ {"titulo":"Lote residencial en Escazú","provincia":"San José","tipo":"terreno","precio":"₡85.000.000","descripcion":"Lote plano de 450 m² en zona residencial, con todos los servicios.","foto":"/static/img/lote-escazu.svg"},
+ {"titulo":"Local comercial en Desamparados","provincia":"San José","tipo":"local","precio":"₡120.000.000","descripcion":"Local de 90 m² sobre calle principal, ideal para comercio o consultorio.","foto":"/static/img/local-desamparados.svg"},
+ {"titulo":"Casa con patio en Atenas","provincia":"Alajuela","tipo":"casa","precio":"₡95.000.000","descripcion":"Casa de 3 dormitorios con patio amplio y clima agradable todo el año.","foto":"/static/img/casa-atenas.svg"},
+ {"titulo":"Finca ganadera en Santa Cruz","provincia":"Guanacaste","tipo":"finca","precio":"₡210.000.000","descripcion":"Finca de 25 hectáreas con pasto mejorado, fuente de agua y corrales.","foto":"/static/img/finca-santacruz.svg"},
+ {"titulo":"Lote con vista al mar en Puntarenas","provincia":"Puntarenas","tipo":"terreno","precio":"₡140.000.000","descripcion":"Terreno de 1.200 m² con vista al Golfo de Nicoya y acceso por calle pública.","foto":"/static/img/lote-puntarenas.svg"},
+ {"titulo":"Casa en Cartago centro","provincia":"Cartago","tipo":"casa","precio":"₡78.000.000","descripcion":"Casa de 2 niveles cerca de servicios, colegios y transporte público.","foto":"/static/img/casa-cartago.svg"}
+]

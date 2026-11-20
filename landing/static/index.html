@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avalúo Express | Valuaciones & Inmobiliaria</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-50 text-neutral-800 font-sans">
+
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-neutral-200 py-4 px-6 md:px-12 flex justify-between items-center">
+  <div class="font-bold text-sm md:text-base tracking-wide text-neutral-900">Valuaciones &amp; Inmobiliaria</div>
+  <div class="space-x-6 text-sm font-medium hidden md:block">
+    <a href="#reservar" class="hover:text-emerald-700">Oferta</a>
+    <a href="#metodo" class="hover:text-emerald-700">Nuestro enfoque</a>
+    <a href="#propiedades" class="hover:text-emerald-700">Propiedades</a>
+    <a href="#servicios" class="hover:text-emerald-700">Servicios</a>
+    <a href="#experiencia" class="hover:text-emerald-700">Experiencia</a>
+  </div>
+  <a href="https://wa.me/50688443381" target="_blank" rel="noopener" class="bg-emerald-800 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-emerald-700">WhatsApp directo</a>
+</nav>
+
+<!-- Oferta única -->
+<header id="reservar" class="bg-neutral-900 text-white py-16 md:py-20 px-6 md:px-12">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="text-emerald-400 font-semibold mb-3">Oferta de temporada · hasta el 4 de diciembre</p>
+      <h1 class="text-4xl md:text-5xl font-light tracking-tight mb-5">Avalúo Express para <span class="font-semibold text-emerald-400">vender tu propiedad</span></h1>
+      <p class="text-neutral-300 text-lg mb-6 max-w-md">Valoración técnica real de tu finca, terreno, casa o local, con desglose claro de precios para negociar con tranquilidad.</p>
+      <p class="mb-6"><span class="text-neutral-500 line-through text-2xl">₡85.000</span> <span class="text-5xl font-bold ml-2">₡45.000</span></p>
+      <p class="inline-block border border-emerald-500/60 rounded-xl px-4 py-3 text-sm text-neutral-200">
+        <span id="libres" class="text-2xl font-bold text-emerald-400">–</span> de <span id="total">–</span> cupos disponibles · 2 por día
+      </p>
+    </div>
+    <div class="bg-white text-neutral-800 rounded-2xl p-7 shadow-xl">
+      <h2 class="text-xl font-semibold mb-1">Reserva tu cupo</h2>
+      <p class="text-sm text-neutral-500 mb-5">Te escribimos por WhatsApp para confirmar la visita.</p>
+      <form id="form" class="space-y-4">
+        <label class="block text-sm font-medium">Nombre
+          <input name="nombre" required minlength="2" maxlength="80" autocomplete="name" class="mt-1 w-full border border-neutral-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-600"></label>
+        <label class="block text-sm font-medium">WhatsApp
+          <input name="whatsapp" required type="tel" placeholder="8844 3381" autocomplete="tel" class="mt-1 w-full border border-neutral-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-600"></label>
+        <div class="grid grid-cols-2 gap-3">
+          <label class="block text-sm font-medium">Tipo de bien
+            <select name="tipo" required class="mt-1 w-full border border-neutral-300 rounded-lg px-3 py-2 bg-white">
+              <option>Terreno</option><option>Finca</option><option>Casa</option><option>Local</option><option>Ganado</option><option>Vehículo</option></select></label>
+          <label class="block text-sm font-medium">Provincia
+            <select name="provincia" required class="mt-1 w-full border border-neutral-300 rounded-lg px-3 py-2 bg-white">
+              <option>San José</option><option>Alajuela</option><option>Cartago</option><option>Heredia</option><option>Guanacaste</option><option>Puntarenas</option><option>Limón</option></select></label>
+        </div>
+        <label class="block text-sm font-medium">Día de la visita
+          <select id="dia" name="dia" required class="mt-1 w-full border border-neutral-300 rounded-lg px-3 py-2 bg-white"></select></label>
+        <button id="btn" class="w-full bg-emerald-800 text-white font-medium py-3 rounded-full hover:bg-emerald-700 disabled:opacity-60">Reservar mi cupo</button>
+        <p id="estado" role="status" class="text-sm min-h-5"></p>
+      </form>
+    </div>
+  </div>
+</header>
+
+<!-- Enfoque -->
+<section id="metodo" class="py-16 px-6 md:px-12 bg-white">
+  <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="p-7 rounded-2xl bg-neutral-100"><h3 class="font-bold text-lg mb-2">¿Necesitas vender tu propiedad y quieres un avalúo para ofrecerla?</h3><p class="text-sm text-neutral-600">Te acompañamos en todo el proceso. Realizamos la valoración real de tu finca, terreno, ganado o vehículo para vender con éxito.</p></div>
+    <div class="p-7 rounded-2xl bg-neutral-100"><h3 class="font-bold text-lg mb-2">Ventas ágiles y precios justos</h3><p class="text-sm text-neutral-600">Respaldos técnicos profesionales, sin complicaciones ni sorpresas en el camino.</p></div>
+    <div class="p-7 rounded-2xl bg-neutral-100"><h3 class="font-bold text-lg mb-2">Transparencia y claridad</h3><p class="text-sm text-neutral-600">Evaluación técnica completa con un desglose claro de precios ajustados al mercado actual y la asesoría necesaria para negociar con tranquilidad.</p></div>
+    <div class="p-7 rounded-2xl bg-neutral-100"><h3 class="font-bold text-lg mb-2">Si desea comprar, hacemos un análisis integral</h3><p class="text-sm text-neutral-600">Evaluamos el valor real de mercado, la situación técnica y las condiciones del inmueble para que realice una inversión segura.</p></div>
+  </div>
+</section>
+
+<!-- Propiedades -->
+<section id="propiedades" class="py-20 px-6 md:px-12 bg-neutral-50 border-t border-neutral-200">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center max-w-xl mx-auto mb-10">
+      <h2 class="text-3xl font-light mb-3">Venta de propiedades</h2>
+      <p class="text-neutral-500">Selecciona una provincia para explorar terrenos, fincas e inmuebles. <span class="text-xs">(Datos e imágenes ilustrativos)</span></p>
+    </div>
+    <div id="filtros" class="flex flex-wrap justify-center gap-3 mb-10"></div>
+    <div id="props" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+  </div>
+</section>
+
+<!-- Servicios -->
+<section id="servicios" class="py-20 px-6 md:px-12 bg-neutral-100 border-t border-neutral-200">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center max-w-xl mx-auto mb-12"><h2 class="text-3xl font-light mb-3">Nuestros servicios</h2><p class="text-neutral-500">Soluciones profesionales en valoración técnica y gestión inmobiliaria.</p></div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="p-7 bg-white rounded-2xl border border-neutral-200"><div class="text-3xl mb-3">🏢</div><h3 class="font-semibold text-lg mb-2">Terrenos y construcciones</h3><p class="text-sm text-neutral-600">Valuaciones técnicas de fincas, lotes, locales y edificaciones para trámites legales, bancarios o comerciales.</p></div>
+      <div class="p-7 bg-white rounded-2xl border border-neutral-200"><div class="text-3xl mb-3">🐄</div><h3 class="font-semibold text-lg mb-2">Ganado</h3><p class="text-sm text-neutral-600">Avalúos técnicos de hatos ganaderos y activos pecuarios con criterios precisos de mercado y producción.</p></div>
+      <div class="p-7 bg-white rounded-2xl border border-neutral-200"><div class="text-3xl mb-3">🚗</div><h3 class="font-semibold text-lg mb-2">Vehículos</h3><p class="text-sm text-neutral-600">Peritaje y estimación comercial de flotas, automóviles, maquinaria y equipos de transporte.</p></div>
+      <div class="p-7 bg-white rounded-2xl border border-neutral-200"><div class="text-3xl mb-3">🤝</div><h3 class="font-semibold text-lg mb-2">Gestión inmobiliaria</h3><p class="text-sm text-neutral-600">Intermediación experta en compra, venta y alquiler de bienes raíces con asesoría legal y comercial.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Experiencia -->
+<section id="experiencia" class="py-20 px-6 md:px-12 bg-white border-t border-neutral-200">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-light mb-6">Experiencia y respaldo profesional</h2>
+    <p class="text-lg text-neutral-600 font-light leading-relaxed mb-8">Como perito valuador certificado y experto en bienes raíces, ofrecemos diagnósticos certeros, imparciales y fundamentados bajo rigurosos estándares técnicos. Nuestra trayectoria garantiza transacciones transparentes y avalúos con validez oficial.</p>
+    <div class="grid md:grid-cols-3 gap-6 border-y border-neutral-200 py-8">
+      <div><span class="block text-3xl font-bold text-emerald-800">+20 años</span><span class="text-sm text-neutral-500">De trayectoria en el sector</span></div>
+      <div><span class="block text-3xl font-bold text-emerald-800">Certificado</span><span class="text-sm text-neutral-500">ICOVAL, CIAGRO</span></div>
+      <div><span class="block text-3xl font-bold text-emerald-800">100%</span><span class="text-sm text-neutral-500">Confianza y rigor técnico</span></div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-neutral-900 text-neutral-400 text-sm text-center py-8 px-6">
+  Valuaciones &amp; Inmobiliaria · Tarea académica con datos ficticios ·
+  <a class="text-emerald-400 underline" href="https://wa.me/50688443381" target="_blank" rel="noopener">WhatsApp</a>
+</footer>
+
+<script>
+const $ = s => document.querySelector(s);
+const WA = '50688443381';
+function el(t, c, x) { const e = document.createElement(t); if (c) e.className = c; if (x !== undefined) e.textContent = x; return e; }
+const fecha = d => new Date(d + 'T12:00:00').toLocaleDateString('es-CR', { weekday: 'long', day: 'numeric', month: 'long' });
+
+async function cargarCupos() {
+  const sel = $('#dia');
+  try {
+    const d = await (await fetch('/api/cupos')).json();
+    let libres = 0, total = 0;
+    sel.innerHTML = '';
+    sel.append(new Option('Elige un día', ''));
+    d.forEach(x => {
+      libres += x.libres; total += x.total;
+      const o = new Option(fecha(x.dia) + ' · ' + (x.libres ? x.libres + (x.libres === 1 ? ' cupo' : ' cupos') : 'agotado'), x.dia);
+      o.disabled = !x.libres; sel.append(o);
+    });
+    $('#libres').textContent = libres; $('#total').textContent = total;
+  } catch (e) { $('#estado').textContent = 'No pudimos cargar los cupos. Recarga la página.'; }
+}
+
+$('#form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const btn = $('#btn'), est = $('#estado');
+  btn.disabled = true; est.className = 'text-sm min-h-5 text-neutral-600'; est.textContent = 'Reservando...';
+  try {
+    const r = await fetch('/api/leads', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(Object.fromEntries(new FormData(e.target))) });
+    if (r.ok) {
+      e.target.reset();
+      est.className = 'text-sm min-h-5 text-emerald-700 font-medium';
+      est.textContent = '¡Cupo reservado! Te escribiremos por WhatsApp para confirmar.';
+    } else {
+      const j = await r.json().catch(() => ({}));
+      est.className = 'text-sm min-h-5 text-red-700';
+      est.textContent = typeof j.detail === 'string' ? j.detail : 'Revisa los datos del formulario e inténtalo de nuevo.';
+    }
+  } catch (err) { est.className = 'text-sm min-h-5 text-red-700'; est.textContent = 'Sin conexión. Inténtalo de nuevo.'; }
+  btn.disabled = false; cargarCupos();
+});
+
+// Propiedades
+const PROVS = ['Todas', 'San José', 'Alajuela', 'Cartago', 'Heredia', 'Guanacaste', 'Puntarenas', 'Limón'];
+let props = [], activa = 'Todas';
+function pintarFiltros() {
+  const box = $('#filtros'); box.innerHTML = '';
+  PROVS.forEach(p => {
+    const b = el('button', 'px-5 py-2 rounded-xl border text-sm font-medium ' + (p === activa ? 'bg-emerald-800 text-white border-emerald-800' : 'bg-white text-neutral-700 border-neutral-200 hover:border-emerald-700'), p);
+    b.type = 'button'; b.onclick = () => { activa = p; pintarFiltros(); pintarProps(); }; box.append(b);
+  });
+}
+function pintarProps() {
+  const box = $('#props'); box.innerHTML = '';
+  const lista = activa === 'Todas' ? props : props.filter(p => p.provincia === activa);
+  if (!lista.length) { box.append(el('p', 'md:col-span-3 text-center text-neutral-500', 'Por ahora no hay propiedades en esta provincia. Escríbenos y te ayudamos a encontrar la ideal.')); return; }
+  lista.forEach(p => {
+    const c = el('div', 'bg-white rounded-2xl border border-neutral-200 overflow-hidden flex flex-col');
+    const img = el('img', 'w-full h-48 object-cover'); img.src = p.foto; img.alt = p.titulo; img.loading = 'lazy'; c.append(img);
+    const b = el('div', 'p-6 flex flex-col flex-1');
+    b.append(el('span', 'text-xs text-emerald-800 font-semibold mb-2', p.provincia + ' · ' + p.tipo));
+    b.append(el('h3', 'font-semibold text-xl mb-2', p.titulo));
+    b.append(el('p', 'text-lg font-medium text-emerald-800 mb-3', p.precio));
+    b.append(el('p', 'text-neutral-600 text-sm mb-6 flex-1', p.descripcion));
+    const a = el('a', 'bg-emerald-800 text-white px-5 py-2 rounded-full text-sm font-medium text-center hover:bg-emerald-700', 'Consultar');
+    a.href = 'https://wa.me/' + WA + '?text=' + encodeURIComponent('Hola, me interesa la propiedad: ' + p.titulo);
+    a.target = '_blank'; a.rel = 'noopener'; b.append(a); c.append(b); box.append(c);
+  });
+}
+fetch('/static/propiedades.json').then(r => r.json()).then(d => { props = d; pintarProps(); }).catch(() => {
+  $('#props').append(el('p', 'md:col-span-3 text-center text-neutral-500', 'No pudimos cargar las propiedades. Escríbenos por WhatsApp.'));
+});
+pintarFiltros(); cargarCupos();
+</script>
+</body>
+</html>
