@@ -4,13 +4,15 @@ Landing de temporada para **Avalúo Express**: avalúo de propiedades por **₡4
 
 > **Aviso:** este es un **trabajo académico**. Todos los datos (propiedades, leads, cupos, precios y la campaña en sí) son **ficticios** y no representan un servicio real.
 
+> **Fotos:** las fotografías de las propiedades son de uso libre y se usan únicamente como ilustración; no corresponden a propiedades reales.
+
 ## Estructura
 
 ```
 avaluo-express/
 ├── landing/              # Landing + API (FastAPI)
 │   ├── main.py           # Endpoints: cupos, leads, resumen
-│   ├── static/           # index.html, propiedades.json e imágenes SVG
+│   ├── static/           # index.html, propiedades.json e imágenes (fotos JPG)
 │   ├── gen_images.py     # Genera las imágenes de ejemplo
 │   ├── requirements.txt
 │   └── Procfile

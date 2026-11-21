@@ -168,7 +168,7 @@ function pintarProps() {
   if (!lista.length) { box.append(el('p', 'md:col-span-3 text-center text-neutral-500', 'Por ahora no hay propiedades en esta provincia. Escríbenos y te ayudamos a encontrar la ideal.')); return; }
   lista.forEach(p => {
     const c = el('div', 'bg-white rounded-2xl border border-neutral-200 overflow-hidden flex flex-col');
-    const img = el('img', 'w-full h-48 object-cover'); img.src = p.foto; img.alt = p.titulo; img.loading = 'lazy'; c.append(img);
+    const img = el('img', 'block w-full h-48 md:h-56 object-cover rounded-t-2xl bg-neutral-100'); img.src = p.foto; img.alt = p.titulo; img.loading = 'lazy'; img.decoding = 'async'; c.append(img);
     const b = el('div', 'p-6 flex flex-col flex-1');
     b.append(el('span', 'text-xs text-emerald-800 font-semibold mb-2', p.provincia + ' · ' + p.tipo));
     b.append(el('h3', 'font-semibold text-xl mb-2', p.titulo));
